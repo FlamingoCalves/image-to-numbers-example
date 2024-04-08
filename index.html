@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Random Image Generator</title>
-    <style>
-        body {
-            text-align: center;
-            margin-top: 50px;
-            font-family: Arial, sans-serif;
-        }
-        #imageCanvas {
-            border: 1px solid #000;
-        }
-        #arrayDisplay {
-            margin-top: 20px;
-            font-size: 14px;
-            white-space: pre;
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            padding: 10px;
-            display: inline-block;
-            text-align: left;
-            max-height: 200px;
-            overflow-y: auto;
-        }
-    </style>
+    <title>Image + 3D Array Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Random Image Generator</h2>
-    <canvas id="imageCanvas" width="600" height="600"></canvas>
-    <br>
-    <button id="generate">Generate</button>
-    <pre id="arrayDisplay"></pre>
-
-    <script>
-        // JavaScript code goes here
-    </script>
+    <h2>Image + 3D Array Generator</h2>
+    <button id="generateBtn" class="generate-button">Generate</button>
+    <div id="container">
+        <div>
+            <h3>Image</h3>
+            <canvas id="canvas" width="600" height="600" class="image-canvas"></canvas>
+        </div>
+        <div>
+            <h3>3D Array</h3>
+            <pre id="unscaledArray" class="unscaled-array"></pre>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

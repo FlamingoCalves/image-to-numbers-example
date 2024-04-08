@@ -1,0 +1,81 @@
+/* Include the 'Inter' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333; 
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    margin-bottom: 2rem;
+    flex-wrap: wrap; 
+}
+
+canvas, #unscaledArray {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    max-height: 600px;
+    border: none; 
+}
+
+canvas {
+    width: 600px;
+    height: 600px;
+}
+
+#unscaledArray {
+    padding: 1rem;
+    width: 300px; 
+    height: 600px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+#generateBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #0a942c; 
+    color: white;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generateBtn:hover {
+    background-color: #35844b; 
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #unscaledArray {
+        width: 80%;
+        margin-top: 1rem;
+    }
+}
